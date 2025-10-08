@@ -113,6 +113,7 @@
     .hero-card {
       flex-direction: column;
       height: auto;
+      
     }
     .left {
       border-right: none;
@@ -460,4 +461,26 @@ button:hover {
   }
 }
 
+/* -------- NAVBAR (MOBILE) -------- */
+@media (max-width: 768px) {
+  nav {
+    /* Reduce side padding for more space */
+    padding: 20px 20px;
+    width: 90%; /* Make the navbar a bit wider on mobile */
+  }
 
+  nav h1 {
+    /* Make the "STRIKE" title smaller */
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    /* Reduce the space between nav links */
+    gap: 5px;
+  }
+
+  nav ul li a {
+    /* Make the nav link text smaller */
+    font-size: 0.75rem;
+  }
+}

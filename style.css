@@ -35,7 +35,18 @@
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 1px;
+      animation: glow 2s ease-in-out infinite alternate; 
     }
+
+    /* This is the code for the glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #68b40c, 0 0 20px #fff, 0 0 30px #00bcd4;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #FF8000, 0 0 40px #FF8000;
+  }
+}
 
     nav ul {
       list-style: none;
@@ -370,6 +381,7 @@ button:hover {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .mentor-btn:hover {

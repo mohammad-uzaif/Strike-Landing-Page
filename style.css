@@ -697,20 +697,25 @@ button:hover {
   }
 
   nav {
+    flex-direction: column; 
+    gap: 10px;     
     padding: 20px 20px;
-    width: 85%;
+    width: 85%;          
   }
 
   nav h1 {
+    margin-top:0.2rem;
     font-size: 1.2rem;
   }
 
   nav ul {
-    gap: 5px;
+    gap: 15px;
   }
 
   nav ul li a {
-    font-size: 0.75rem;
+    font-size: 0.90rem;
+    margin-bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.037);
   }
 
   .learn-promo-content {

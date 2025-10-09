@@ -69,9 +69,226 @@
     nav ul li:hover {
       color: #00bcd4;
     }
+    /* --------------------------------------------------------- */
+    /* ======================================= */
+/* NEW PROMO TUTORIALS SECTION        */
+/* ======================================= */
+
+/* A generic container class if you don't have one */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.learn-promo-section {
+    padding: 100px 0;
+    /* Using a slightly different dark background to create separation */
+    background-color: #111111; 
+    border-top: 1px solid rgba(255, 128, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 128, 0, 0.3);
+}
+
+.learn-promo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left Side: Text and Stats */
+.learn-promo-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.learn-promo-text h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Using your orange highlight color */
+.learn-promo-text .promo-highlight {
+    color: #FF8000;
+}
+
+.learn-promo-text .subtitle {
+    font-size: 1.1rem;
+    color: #ccc; /* Lighter text for contrast on dark bg */
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.learn-promo-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.promo-btn {
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.promo-btn-primary {
+    background: linear-gradient(135deg, #00bcd4, #2196f3); /* Matching your enroll button */
+    color: white;
+}
+
+.promo-btn-primary:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.promo-btn-secondary {
+    background: transparent;
+    color: #00bcd4;
+    border: 2px solid #00bcd4; /* Matching your syllabus button */
+}
+
+.promo-btn-secondary:hover {
+    background-color: rgba(0, 188, 212, 0.1);
+}
+
+/* Stats */
+.learn-promo-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.promo-stat .promo-stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.promo-stat .promo-stat-label {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
+
+/* Right Side: Code Snippet */
+.promo-code-snippet {
+    flex: 1;
+    max-width: 500px;
+    background-color: #2D2D2D;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.promo-code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.promo-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.promo-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.promo-dot.red { background-color: #FF5F56; }
+.promo-dot.yellow { background-color: #FFBD2E; }
+.promo-dot.green { background-color: #27C93F; }
+
+.promo-filename {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.promo-code-snippet pre {
+    margin: 0;
+}
+
+.promo-code-snippet code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #EAEAEA;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Syntax Highlighting Styles */
+.promo-code-keyword { color: #C778DD; }
+.promo-code-function { color: #61AFEF; }
+.promo-code-string { color: #98C379; }
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .learn-promo-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .learn-promo-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .promo-code-snippet {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .learn-promo-buttons, .learn-promo-stats {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .learn-promo-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .learn-promo-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .promo-btn {
+        width: 80%;
+        text-align: center;
+    }
+
+    .learn-promo-stats {
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .promo-stat .promo-stat-number {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
     /* -------- HERO SECTION -------- */
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,14 +296,14 @@
 
   .hero-card {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1500px;
     height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 25px;
     padding: 40px;
-    margin-top: 70px;
+    margin-top: 50px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);

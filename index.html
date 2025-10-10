@@ -4,16 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="strikeicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>STRIKE Landing Page</title>
 </head>
 
 <body>
-  <nav>
+  <!-- The <nav> element now contains the checkbox, the label (hamburger), and the links -->
+  <nav class="navbar">
     <h1>STRIKE</h1>
-    <ul>
+
+    <!-- 1. The invisible checkbox that tracks the menu's state (open/closed) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+    <!-- 2. The visible hamburger menu button. It's a label for the checkbox. -->
+    <!-- Clicking this label will check/uncheck the box. -->
+    <label for="menu-toggle" class="menu-toggle-label">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+
+    <!-- 3. The navigation links menu -->
+    <ul class="nav-links">
       <li><a href="https://coderarmy.in/#home" target="_blank">Coder Army</a></li>
       <li><a href="#hero">WHY ?</a></li>
       <li><a href="#mentor">Mentor</a></li>
@@ -50,34 +66,34 @@
           </div>
         </div>
 
-        
+
         <div class="contact-image-container">
-                    <div class="orbit-container">
-                        <div class="contact-sun">
-                            <span>STRIKE</span>
-                        </div>
-                        <div class="planet-orbit">
-                            <div class="orbiting-planet">
-                                <i class="fab fa-cuttlefish"></i>
-                            </div>
-                        </div>
-                        <div class="planet-orbit">
-                            <div class="orbiting-planet">
-                                <i class="fa-solid fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="planet-orbit">
-                            <div class="orbiting-planet">
-                                <i class="fab fa-github"></i>
-                            </div>
-                        </div>
-                        <div class="planet-orbit">
-                            <div class="orbiting-planet">
-                                <i class="fab fa-js"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="orbit-container">
+            <div class="contact-sun">
+              <span>STRIKE</span>
+            </div>
+            <div class="planet-orbit">
+              <div class="orbiting-planet">
+                <i class="fab fa-cuttlefish"></i>
+              </div>
+            </div>
+            <div class="planet-orbit">
+              <div class="orbiting-planet">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+            </div>
+            <div class="planet-orbit">
+              <div class="orbiting-planet">
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+            <div class="planet-orbit">
+              <div class="orbiting-planet">
+                <i class="fab fa-js"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -240,9 +256,9 @@
         <p>Email: <a href="#">STRIKE</a></p>
         <p>Phone: +91 98765 43210</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/ozaifkie/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mohd-uzaif-ansari/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/mohammad-uzaif"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </div>

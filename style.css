@@ -33,7 +33,7 @@ nav {
 nav h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -65,6 +65,12 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #FF8000;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  
 }
 
 nav ul li:hover {
@@ -700,11 +706,12 @@ button:hover {
     flex-direction: column; 
     gap: 10px;     
     padding: 20px 20px;
-    width: 85%;          
+    width: 85%;  
+    height: 53px;        
   }
 
   nav h1 {
-    margin-top:0.2rem;
+    margin-top:0.1rem;
     font-size: 1.2rem;
   }
 
@@ -714,8 +721,11 @@ button:hover {
 
   nav ul li a {
     font-size: 0.90rem;
-    margin-bottom: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.037);
+    margin-bottom: px;
+    /* background-color: #c1d6de17;
+    border-radius: 10px; */
+    
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
   }
 
   .learn-promo-content {

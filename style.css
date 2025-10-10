@@ -792,3 +792,17 @@ button:hover {
     font-size: 2rem;
   }
 }
+
+.footer-bottom a{
+  text-decoration: none;
+  color:brown;
+  font-family: monospace;
+  cursor: pointer;
+  transform: scale(2);
+  transition-duration: 0.5s;
+  border-radius: 2px;
+}
+
+.footer-bottom a:hover{
+  background-color: #dddcea;
+}
